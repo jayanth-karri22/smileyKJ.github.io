@@ -4,6 +4,12 @@ body{
   line-height: 1.6;
   background: $white;
   font-size:.875rem;
+  max-width: 100%;
+}
+
+img{
+  max-width: 100%;
+  margin:0 auto;
 }
 
 h1,h2,p{
@@ -15,11 +21,6 @@ h1{
   color:$accent;
   line-height:1;
   font-size:3.125rem;
-
-  span{
-    @include sans-serif($fs:5.5rem,$color:$accent);
-    display: block;
-  }
 }
 
 h2{ 
