@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/smileyKJ/My-portfolio-with-css-grid.git"
   },
-  "author": "Karri Jayanth",
+  "author": "Karri Jayanth5",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.13",

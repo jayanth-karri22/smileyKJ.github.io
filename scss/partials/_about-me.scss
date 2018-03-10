@@ -22,15 +22,21 @@
   .about-me{
     display: grid;
     grid-template-columns:[port-start] minmax(6em,1fr) [name-start] minmax(6em,1fr) [img-end] 2fr[port-end];
+    grid-column-gap:.5em;
   }
   .about-img{
     grid-column: port-start/img-end;
     grid-row:1/2;
+
+    @include mq{
+      grid-row:1/4;
+    }
   }
   .about-title{
     grid-column: name-start/port-end;
     grid-row:1/2;
     align-self: end;
+
   }
 
   .about-subtitle,
@@ -38,5 +44,17 @@
     grid-column: port/port; 
   }
 
+  .about-subtitle{
+    @include mq{
+      grid-column: image-end/port-end;
+      grid-row:2/3;
+    }
+  }
+  .about-text{
+    @include mq{
+      grid-row:3/4;
+      grid-column:image-end/port-end;
+    }
+  }
 }
 

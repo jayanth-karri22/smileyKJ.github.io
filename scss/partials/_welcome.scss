@@ -6,15 +6,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: relative;
   h1{
     font-size : 1.5rem;
     font-weight: $fw-n;
     color:$dark-blue;
     line-height: 2;
     text-align: center;
+    @include mq{
+    font-size:3vw;
+    }
 
     span{
+    @include mq{
+    font-size:10vw;
+    }
+
     @include sans-serif($fs:5.5rem,$color:$accent);
     display: block;
     }
