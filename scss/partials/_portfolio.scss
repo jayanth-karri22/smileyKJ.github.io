@@ -90,9 +90,6 @@
       grid-template-columns: repeat(4,1fr);
     }
   }
-  .portfolio-title{
-    font-size:1.5em;
-  }
   .featured {
     .portfolio-title{
       font-size: 5rem;
@@ -176,7 +173,7 @@
   width:70%;
 
   .portfolio-title{
-    font-size:3.5rem;
+    font-size:1.5em;
 
     &::after{
       content: '';
