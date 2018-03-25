@@ -305,7 +305,8 @@ body {
   overflow-x: hidden; }
   @media (min-width: 50em) {
     body {
-      font-size: 1.125rem; } }
+      font-size: 1.125rem;
+      overflow-x: hidden; } }
 
 img {
   max-width: 100%;
@@ -458,6 +459,9 @@ h2 {
     .about-text {
       grid-row: 3/4;
       grid-column: image-end/port-end; } } }
+
+.hobby {
+  font-weight: 900; }
 
 .portfolio {
   text-align: center;
