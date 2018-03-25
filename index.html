@@ -12,7 +12,7 @@
     <ul>
       <li><a href="#home">home</a></li>
       <li><a href="#about">about</a></li>
-      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#portfolio">portfolio</a></li>4
       <li><a href="#contact">contact</a></li>
     </ul>
   </nav>
@@ -36,14 +36,13 @@
   </div>
   <section class="intro" id="about">
     <div class="intro-left">
-      <img src="img/welcome-01.png" alt="laptop on a table">
+      <img src="img/welcome-02Code.png" alt="laptop on a table">
     </div>
     <div class="intro-middle">
-      <h2>About Habits Maybe</h2>
-      <p>Will think about something to add here not a problem for now</p>
+      <h2>My hobbies</h2>
     </div>
     <div class="intro-right">
-      <img src="img/welcome-02.png" alt="Two computers and a laptop">
+      <img src="img/welcome-02CS.png" alt="Two computers and a laptop">
     </div>
   </section>
 
@@ -61,19 +60,54 @@
       <h1>My work</h1>
       <div class="portfolio-items">
         <figure class="portfolio-item featured">
-          <img src="img/portfolio-01.jpg" alt="portfolio item">
+          <img src="img/drumkit.jpg" alt="portfolio item">
           <figcaption>
-            <h2 class="portfolio-title">Project Name</h2>
-            <p class="portfolio-desc">A short descriprtion on my project</p>
+            <h2 class="portfolio-title">Drumkit</h2>
+            <p class="portfolio-desc">A JS Project</p>
             <a href="#" class="portfolio-link">More info</a>
           </figcaption>
+          <div class="portfolio-modal">
+            <button class="svg-cross">
+              <svg viewPort="0 0 12 12" version="1.1" x="0px" y="0px" height="17" width="30"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="11" 
+                      x2="11" y2="1" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                <line x1="1" y1="1" 
+                      x2="11" y2="11" 
+                      stroke="black" 
+                      stroke-width="2"/>
+              </svg>
+            </button>
+   
+            <div class="portfoio-header header-one">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">DrumKit</h2>
+                <p class="portfolio-subtitle">A JS Project</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h2>Interface</h2>
+              <img class="portfolio-full-width" src="img/portfolio01.png" alt="an image">
+              <p>This is a drumkit using keyboard keys.</p>
+              <p>This is a fun and interactive project</p>
+              <img class="portfolio-pull-left" src="img/portfolio01code1.jpg" alt="an image">
+              <p>Triggered audio with keydown event.Assigned their respective keycodes to each audio based on keyboard key</p>
+              <p>Audio is turned off using transitionend trigger. If trigger is with keyup event it messes up our css transition which don't happen immediatley after keyup</p>
+              <img class="portfolio-pull-right" src="img/portfolio01code2.jpg" alt="an image">
+              <p>Challenging part of this project is how to make sounds work on tapping keys in quick interval. Solution is to put audio currentTime value to 0</p>
+              <a href="https://github.com/smileyKJ/Drumkit">Github link for this project</a>
+                        
+            </div>
+          </div>
         </figure>
         
         <figure class="portfolio-item">
-          <img src="img/portfolio-02.jpg" alt="portfolio item">
+          <img src="img/clockhome.jpg" alt="portfolio item">
           <figcaption>
-            <h2 class="portfolio-title">Project Name</h2>
-            <p class="portfolio-desc">A short descriprtion on my project</p>
+            <h2 class="portfolio-title">Analog Clock</h2>
+            <p class="portfolio-desc">A CSS and JS project</p>
             <a href="#" class="portfolio-link">More info</a>
           </figcaption>
           <div class="portfolio-modal">
@@ -93,64 +127,167 @@
    
             <div class="portfoio-header header-two">
               <div class="portfolio-title-box">
-                <h2 class="portfolio-title">Project Name</h2>
-                <p class="portfolio-subtitle">Subtitle goes here</p>
+                <h2 class="portfolio-title">Analog Clock</h2>
+                <p class="portfolio-subtitle">A CSS and JS Project</p>
               </div>
             </div>
             <div class="portfolio-content">
-              <p>Wrtie about my project ,source code blahavlahavla Wrtie about my project ,source code blahavlahavla </p>
-              <img class="portfolio-full-width" src="img/portfolio-02.jpg" alt="an image">
-              <p>Wrtie about my project ,source code blahavlahavla Wrtie about my project ,source code blahavlahavla </p>
-              <p>Wrtie about my project ,source code blahavlahavla Wrtie about my project ,source code blahavlahavla </p>
-              <img class="portfolio-pull-left" src="img/portfolio-02.jpg" alt="an image">
-              <p>Wrtie about my project ,source code blahavlahavla Wrtie about my project ,source code blahavlahavla </p>
-              <p>Wrtie about my project ,source code blahavlahavla Wrtie about my project ,source code blahavlahavla </p>
-              <img class="portfolio-pull-right" src="img/portfolio-02.jpg" alt="an image">
-                        
+              <p>Interface</p>
+              <img class="portfolio-full-width" src="img/clock.jpg" alt="an image">
+              <p>This is funny how we use date.now() to get real time hrs, minutes and convert them into angle to display it in analog</p>
+              <p>Smarter project would be just seeing time from Date.now() :P</p>
+              <img class="portfolio-pull-left" src="img/clockcode01.jpg" alt="an image">
+              <p>We select three div's and assign them to seconds,minutes and hours hand</p>
+              <p>For minute and seconds hand we rotate dial by 6 degree for every 1 unit but it is not the case with hours hand as we just have 12 hrs in analog watch.Update seconds with setInterval </p>
+              <img class="portfolio-pull-right" src="img/clockcode02.jpg" alt="an image">
+              <p>Challenging part of this project is div in default lay in horizontal plane.Solution is just rotate them with transform to change default. This is not it we have to add 90 degree to each of our clock's hand to makeup that angle</p>
+              <a href="https://github.com/smileyKJ/Js-clock">Github link for this project</a>    
             </div>
           </div>
         </figure>
 
         <figure class="portfolio-item">
-          <img src="img/portfolio-03.jpg" alt="portfolio item">
+          <img src="img/temperaturehome.jpg" alt="portfolio item">
           <figcaption>
-            <h2 class="portfolio-title">Project Name</h2>
-            <p class="portfolio-desc">A short descriprtion on my project</p>
+            <h2 class="portfolio-title">Farenheit to Celsius</h2>
+            <p class="portfolio-desc">A ReactJS Project</p>
             <a href="#" class="portfolio-link">More info</a>
           </figcaption>
+          <div class="portfolio-modal">
+            <button class="svg-cross">
+              <svg viewPort="0 0 12 12" version="1.1" x="0px" y="0px" height="17" width="30"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="11" 
+                      x2="11" y2="1" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                <line x1="1" y1="1" 
+                      x2="11" y2="11" 
+                      stroke="black" 
+                      stroke-width="2"/>
+              </svg>
+            </button>
+   
+            <div class="portfoio-header header-three">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">Farenheit to Celsius</h2>
+                <p class="portfolio-subtitle">A ReactJS Project</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <p>This is one of my first react projects so didn't use much of css . This is the interface yes it looks bad .</p>
+              <img class="portfolio-full-width" src="img/temperature.jpg" alt="an image">
+              <p>This project is to check if water boils at given temperature</p>
+              <p>User can be able to input temperature in either Celsius or Fahrenheit</p>
+              <img class="portfolio-pull-left" src="img/temperaturecode1.jpg" alt="an image">
+              <p>We have two inputs one for celsius and other for Fahrenheit.onChange event we get value from target</p>
+              <p>On changing value in one input let say celsius it set scale's state to 'c' and temperature's state to target value and converts it into Fahrenheit using basic fahrenheit to celsius conversion</p>
+              <img class="portfolio-pull-right" src="img/temperaturecode2.jpg" alt="an image">
+              <p>Challenging part of this project is to update state in other input on changing value in one input</p>
+              <a href="https://github.com/smileyKJ/reactJS-temperature">Github link for this project</a>
+            </div>
+          </div>
         </figure>
 
         <figure class="portfolio-item">
-          <img src="img/portfolio-04.jpg" alt="portfolio item">
+          <img src="img/hackernews.png" alt="portfolio item">
           <figcaption>
-            <h2 class="portfolio-title">Project Name</h2>
-            <p class="portfolio-desc">A short descriprtion on my project</p>
+            <h2 class="portfolio-title">HackerNews Search Engine</h2>
+            <p class="portfolio-desc">A ReactJS Project</p>
             <a href="#" class="portfolio-link">More info</a>
           </figcaption>
+          <div class="portfolio-modal">
+            <button class="svg-cross">
+              <svg viewPort="0 0 12 12" version="1.1" x="0px" y="0px" height="17" width="30"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="11" 
+                      x2="11" y2="1" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                <line x1="1" y1="1" 
+                      x2="11" y2="11" 
+                      stroke="black" 
+                      stroke-width="2"/>
+              </svg>
+            </button>
+   
+            <div class="portfoio-header header-four">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">HackerNews Search Engine</h2>
+                <p class="portfolio-subtitle">A ReactJS Project</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <p>Interface</p>
+              <img class="portfolio-full-width" src="img/portfolio-04.jpg" alt="an image">
+              <p>This is hackernews search engine , type a keyword in input and find matches</p>
+              <p>Matches are sorted based on votes/points</p>
+              <img class="portfolio-pull-left" src="img/portfolio04code1.jpg" alt="an image">
+              <p>On typing a keyword we fetch top stories with search term included in api and update page for each search default page value zero</p>
+              <p>We update our search items based on item's object ID</p>
+              <img class="portfolio-pull-right" src="img/portfolio04code2.jpg" alt="an image">
+              <p>Challenging part of this project is using api and the component lifecycle</p>
+              <a href="https://github.com/smileyKJ/Hackernews-Build">Github link for this project</a>
+            </div>
+          </div>
         </figure>
 
         <figure class="portfolio-item">
-          <img src="img/portfolio-05.jpg" alt="portfolio item">
+          <img src="img/gif.jpg" alt="portfolio item">
           <figcaption>
-            <h2 class="portfolio-title">Project Name</h2>
-            <p class="portfolio-desc">A short descriprtion on my project</p>
+            <h2 class="portfolio-title">Gif Search Engine</h2>
+            <p class="portfolio-desc">A ReactJS Project</p>
             <a href="#" class="portfolio-link">More info</a>
           </figcaption>
+          <div class="portfolio-modal">
+            <button class="svg-cross">
+              <svg viewPort="0 0 12 12" version="1.1" x="0px" y="0px" height="17" width="30"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="11" 
+                      x2="11" y2="1" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                <line x1="1" y1="1" 
+                      x2="11" y2="11" 
+                      stroke="black" 
+                      stroke-width="2"/>
+              </svg>
+            </button>
+   
+            <div class="portfoio-header header-five">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">Gif Search Engine</h2>
+                <p class="portfolio-subtitle">A ReactJS Project</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <p>Interface</p>
+              <img class="portfolio-full-width" src="img/portfolio05.jpg" alt="an image">
+              <p>This is gif search engine very similar to hackernews search engine.</p>
+              <p>This project takes a keyword from user and output gif related to keyword</p>
+              <img class="portfolio-pull-left" src="img/portfolio5code1.jpg" alt="an image">
+              <p>Search term we enter is appended to api and we fill our array with gif data</p>
+              <p>We can now acces gif image url from api and we downsize our image and filter our search list</p>
+              <img class="portfolio-pull-right" src="img/portfolio5code2.jpg" alt="an image">
+              <p>Challenging part of this project is limiting number of searches per page</p>
+              <a href="https://github.com/smileyKJ/Gif-Search-engine">Github link for this project</a>
+            </div>
+          </div>
         </figure>
       </div>
   </section>
 
   <section class="contact" id="contact">
     <h1>Contact me</h1>
-    <form action="">
-      <label class="name">Name:
-        <input type="text" id="name">
+    <form action="mailto:jayanth.22k@gmail.com" method="post" enctype="text/plain">
+      <label class="name">Name: *
+        <input type="text" id="name" required>
       </label>
       <label class="email">Email:
         <input type="text" id="email">
       </label>
-      <label class="message">Message:
-        <textarea name="" id="message"></textarea>
+      <label class="message">Message: *
+        <textarea name="" id="message" required></textarea>
       </label>
 
       <input class="button" type="submit" value="SEND">
@@ -160,9 +297,8 @@
   <footer>
     <p>Follow me on social media</p>
     <div class="social-icons">
-      <img class="social-icon" src="img/twitter.svg" alt="facebook">
-      <img class="social-icon" src="img/twitter.svg" alt="twitter">
-      <img class="social-icon" src="img/github.svg" alt="github">
+      <a class="social-icon" href="https://www.facebook.com/jayanthjoyful"><img src="img/facebookblack.svg" alt="facebook"></a>
+      <a class="social-icon" href="https://github.com/smileyKJ"><img  src="img/github-draw-logo.svg" alt="github"></a>
     </div>
     <p class="copyright">Copyright 2018 Karri Jayanth</p>
   </footer>

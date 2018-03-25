@@ -103,7 +103,7 @@
   box-shadow: 0 0 0 3em rgba(black,.5);
   overflow-y: scroll;
   overflow-x: hidden;
-
+  padding-top:5em;
   display: none;
 
   &.is-open{
@@ -134,8 +134,26 @@
   margin-bottom:2em;
 }
 
-.header-two{
-  background-image: url(../img/portfolio-02.jpg);
+.header-one{
+  background-image: url(../img/drumkit.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.header-three{
+  background-image: url(../img/clock6.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.header-three{
+  background-image: url(../img/temperaturehome.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.header-four{
+  background-image: url(../img/hackernews.png);
+}
+.header-five{
+  background-image: url(../img/gif.jpg);
   background-size:cover;
   background-position: center;
 }

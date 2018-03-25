@@ -7,7 +7,7 @@ footer{
 .social-icons{
   @include container($max-width:15em);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin:1.75em auto 4em;
 }
 
@@ -25,4 +25,8 @@ footer{
     margin: 4em auto;
     width:25%;
   }
+}
+
+.social-icons a{
+  text-decoration: none;
 }

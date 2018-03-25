@@ -544,6 +544,7 @@ h2 {
   box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-top: 5em;
   display: none; }
   .portfolio-modal.is-open {
     display: block; }
@@ -569,8 +570,26 @@ h2 {
   padding: 5em 0;
   margin-bottom: 2em; }
 
-.header-two {
-  background-image: url(../img/portfolio-02.jpg);
+.header-one {
+  background-image: url(../img/drumkit.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.header-three {
+  background-image: url(../img/clock6.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.header-three {
+  background-image: url(../img/temperaturehome.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.header-four {
+  background-image: url(../img/hackernews.png); }
+
+.header-five {
+  background-image: url(../img/gif.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -691,7 +710,7 @@ footer {
   margin: 0 auto;
   max-width: 15em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 1.75em auto 4em; }
 
 .social-icon {
@@ -705,6 +724,9 @@ footer {
   background: rgba(255, 255, 255, 0.15);
   margin: 4em auto;
   width: 25%; }
+
+.social-icons a {
+  text-decoration: none; }
 
 .menu-button {
   position: absolute;
