@@ -43,13 +43,21 @@
 
 .portfolio-title{
   color: white;
-  font-size:2.5rem;
+  font-size:1.5em;
   margin-bottom: auto;
 
+  .featured & {
+    font-size: 5rem;
+  }
+  
 }
 
 .portfolio-desc{
   display: none;
+
+  .featured & {
+    display: block;
+  }
   
 }
 
@@ -72,15 +80,18 @@
 
 @supports(display:grid){
   .portfolio-items {
+  .portfolio-item.featured{
+    grid-column: 1/span 2;
+    grid-row:1/span 2;
+  }
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     @include mq{
       grid-template-columns: repeat(4,1fr);
     }
   }
-  .portfolio-item.featured{
-    grid-column: 1/span 2;
-    grid-row:1/span 2;
+  .portfolio-title{
+    font-size:1.5em;
   }
   .featured {
     .portfolio-title{
